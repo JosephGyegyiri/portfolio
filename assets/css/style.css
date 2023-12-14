@@ -936,8 +936,9 @@ footer p a:hover{
 
 .gmap{
             position: relative;
-            width: 30%;
-            height: 30%;
+            max-width: 100%;
+            width: 100%;
+            overflow: hidden;
             object-fit: cover;
             transition: all 0.3s ease;
             border-radius: 10%;
@@ -945,5 +946,12 @@ footer p a:hover{
             margin-left: 100px; /* Align to the right by setting left margin to auto */
             margin-right: 0px; /* Add some spacing from the right */
             opacity: 0.8;
+};
+
+
+#canvas-for-googlemap {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
 };
 
