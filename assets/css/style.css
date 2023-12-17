@@ -228,7 +228,7 @@ section .title::after{
 .about .about-content .left img{
     height: 330px;
     width: 300px;
-    object-fit: auto;
+    object-fit: cover;
     border-radius: 10%;
     border: 2px solid skyblue;
 }
