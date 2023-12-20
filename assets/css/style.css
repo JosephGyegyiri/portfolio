@@ -946,7 +946,7 @@ footer p a:hover{
             margin-left: 100px; /* Align to the right by setting left margin to auto */
             margin-right: 0px; /* Add some spacing from the right */
             opacity: 0.8;
-};
+}
 
 
 
@@ -968,9 +968,22 @@ footer p a:hover{
 .mySlides {
     width: 90%;
     height: 90%;
-    object-fit: cover;
+    object-fit: contain;
+}
+.text-center {
+    text-align: center;
+  }
+
+.tools-used {
+    font-weight: bold;
+    color: black;
 }
 
+.project-text {
+    font-family: sans-serif;
+    font-size: 16px;
+    color:#212529;
+  }
 /* Style the text section */
 .text-section {
     flex: 1;
