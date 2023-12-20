@@ -954,4 +954,18 @@ footer p a:hover{
     width: 100%;
     max-width: 100%;
 };
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    height: 80vh; /* Adjust the height percentage as needed */
+}
+.tools-used {
+  font-weight: bold;
+  color: black;
+}
+.mySlides {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
 
