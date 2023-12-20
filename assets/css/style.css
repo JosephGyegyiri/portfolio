@@ -949,11 +949,7 @@ footer p a:hover{
 };
 
 
-#canvas-for-googlemap {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-};
+
 /* Style the slideshow container */
 .slideshow-container {
     display: flex;
@@ -1006,3 +1002,8 @@ footer p a:hover{
 .next {
     float: right;
 }
+#canvas-for-googlemap {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+};
