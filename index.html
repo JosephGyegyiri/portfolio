@@ -1,404 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta
-            name="description"
-            content="Welcome to my personal portfolio website showcasing my creative projects in GIS Development; GIS Analysis. Explore my work samples and projects. Learn about my skills and expertise. Get to know more about me through my resume.">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://josephgyegyiri.github.io/">
-        <meta property="og:title" content="Josef Portfolio">
-        <title>J . Gyegyiri</title>
-        <link rel="shortcut icon" href="assets/img/gt.png" >
-
-        <link rel="stylesheet" href="assets/css/style.css"/>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-        <style>
-            /* Hover effect for the button */
-            .row button {
-                background-color: skyblue;
-                border: none;
-                color: white;
-                padding: 12px 24px;
-                font-size: 16px;
-                cursor: pointer;
-                border-radius: 4px;
-                transition: background-color 0.3s ease-in-out;
-            }
-
-            .row button:hover {
-                background-image: linear-gradient(to right, #00e2ff, #eb0a37);
-                /* Gradient effect */
-            }
-        </style>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"/>
-
-    </head>
-    <body>
-        <!--div class="preloader"> <img src="pre.svg" alt="Preloader Image"> </div-->
-
-        <div class="scroll-up-btn">
-            <i class="fas fa-angle-up"></i>
-        </div>
-        <nav class="navbar">
-            <div class="max-width">
-                <div class="logo">
-                    <a href="#">
-                        <span></span></a>
-
-                </div>
-                <ul class="menu">
-                    <li></li>
-                    <li>
-                        <a href="#header" class="menu-btn">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="menu-btn">About</a>
-                    </li>
-                    <!--li><a href="#services" class="menu-btn">Services</a></li> <li><a
-                    href="#skills" class="menu-btn">Skills</a></li-->
-                    <li>
-                        <a href="#projects" class="menu-btn">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="menu-btn">Contact</a>
-                    </li>
-                </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Joseph Gyegyiri, E.I., GISP is a civil engineer and geospatial developer working across flood risk, water resources, climate resilience, and data-driven decision support.">
+    <meta name="author" content="Joseph Gyegyiri">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://josephgyegyiri.github.io/">
+    <meta property="og:title" content="Joseph Gyegyiri | Water Resources & Geospatial Data">
+    <meta property="og:description" content="Flood risk modeling, GIS decision support, and Python automation for resilient water infrastructure.">
+    <meta property="og:type" content="website">
+    <title>Joseph Gyegyiri | Water Resources & Geospatial Data</title>
+    <link rel="icon" href="assets/img/gt.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Main navigation">
+            <a class="brand" href="#top" aria-label="Joseph Gyegyiri home">JG<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">Menu</button>
+            <div class="nav-menu" id="site-menu">
+                <a href="#work">Selected work</a>
+                <a href="#approach">Approach</a>
+                <a href="#about">About</a>
+                <a class="nav-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
             </div>
         </nav>
-
-        <!-- header section start -->
-        <section class="header" id="header">
-            <div class="max-width">
-                <div class="header-content">
-                    <div class="column left">
-                    <div class="text-1">Hello, Welcome to my Portfolio Page</div><br>
-                    <div class="text-1">My name is</div><br>
-                    <div class="text-2">Joseph Gyegyiri</div>
-                    <div class="text-3">I'm a
-                        <span class="typing"></span></div>
-
-                </div>
-                </div>
-                <div class="column right">
-                <div
-                    style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"
-                    class="gmap">
-                    <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;">
-                        <iframe
-                            style="height:100%;width:100%;border:0;"
-                            frameborder="0"
-                            src="https://www.google.com/maps/embed/v1/place?q=Boca+Raton,+FL,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>
-                    <a
-                        class="embedded-map-code"
-                        rel="nofollow"
-                        href="https://kbj9qpmy.com/bp"
-                        id="make-map-infor-mation">Broadband Providers</a>
-                </div>
-                </div>
+    </header>
+    <main id="top">
+        <section class="hero wrap">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Civil engineer · E.I. · GISP</p>
+                <h1>Water, risk, and data made <em>decision-ready.</em></h1>
+                <p class="hero-lede">I build hydrologic and hydraulic models, geospatial tools, and Python workflows that help public agencies understand flood risk and plan for a more resilient future.</p>
+                <div class="hero-actions"><a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://www.linkedin.com/in/josephgyegyiri/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+                <div class="hero-credentials" aria-label="Professional credentials"><span>E.I. Florida</span><span>GISP</span><span>PE Exam Passed</span><span>FAA Part 107</span></div>
             </div>
-
-            </section>
-
-            <!-- about section start -->
-            <section class="about" id="about">
-                <div class="max-width">
-                    <h2 class="title">About me</h2>
-                    <div class="about-content">
-                        <div class="column left">
-                            <img src="assets/img/prof.jpg" alt="display picture"/>
-                        </div>
-                        <div class="column right">
-                            <p>
-                                I am an ambitious researcher with working experience in the mining, engineering, and construction sectors. My skill set encompasses diverse proficiencies, 
-                                including Engineering Designing (CAD), land surveying, GIS Development, remote sensing, geospatial data analysis, lidar mapping, and more. 
-                                Armed with a strong foundation in these areas, I offer valuable operational capabilities to any organization, bolstering its overall performance. 
-                                I am pursuing a Master's degree in Civil Engineering at Florida Atlantic University.
-                            </p>
-                            <p>
-                               <br> I am also exploring the exciting realms of Machine Learning, Deep Learning , 
-                                and Web Development applications within the geospatial science landscape. 
-                                My commitment lies in bridging the gap between technology and geospatial sciences, 
-                                with an unwavering enthusiasm for driving innovation and progress.
-                            </p>
-                            <p>
-                                <br>I love to watch movies and listen to country music. I am a die hard Manchester United fan. 
-                                IMO, Messi is the greatest of all time.<br>
-                            </p>
-                            <div class="row">
-                                <a href="https://josephgyegyiri.github.io/about.html" target="_blank" style="text-decoration: none;">
-                                    <button>View Resume</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- services section start -->
-            <!--section class="services" id="services"> <div class="max-width"> <h2
-            class="title">My services</h2> <div class="serv-content"> <div class="card">
-            <div class="box"> <i class="fas fa-code"></i> <div class="text">FrontEnd</div>
-            <p>I am available for FrontEnd work or Internship roles. I will create a fully
-            responsive website for you using HTML, CSS, JavaScript. </p> </div> </div>
-            </div> </div> </div> </section> <!-- skills section start -->
-            <!--section class="skills" id="skills"> <div class="max-width"> <h2
-            class="title">My Skills</h2> <div class="skills-content"> <div class="column
-            left"> <div class="text">skill set :</div> <p> <ul> <li>Proficient in Java, C++,
-            HTML, CSS, and JavaScript.</li> <li>Familiarity with version control systems
-            like GitHub.</li> <li>Strong debugging and problem-solving abilities.</li>
-            <li>Graphic designing using Canva software.</li> </ul> </p> <!-- <a
-            href="#">Read more</a> -->
-            <!--/div> <div class="column right"> <div class="text">Leadership Positions Held
-            :</div> <p> <ul> <li>General Secretary, SACSU-KNUST.</li> <li>Senior Kizito
-            House Captain, St. Peter's Boys SHS.</li> <li>4-H President, Divine Mercy
-            JHS.</li> <li>Deputy Boys Prefect, Divine Mercy JHS.</li> </ul> </ul> </p>
-            </div> </section-->
-
-            <section class="kay" id="kay">
-
-                <!--div class="skills-icons">
-                    <i class="fa-brands fa-python"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-git-alt" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <i class="fa-brands fa-matlab"></i>
-            </div-->
-                <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-                <div class="kay" id="kay">
-                    <img src="https://skillicons.dev/icons?i=autocad,bootstrap,matlab,html,css,vscode,github,git" />
-                    <img src="https://skillicons.dev/icons?i=python,javascript,mysql,django,postgres,jquery" /><br>
-                </div>
-
-            </section>
-
-            <!-- projects section start -->
-            <section class="projects" id="projects">
-                <div class="max-width">
-                    <h2 class="title">My projects</h2>
-                    <div class="carousel owl-carousel">
-                        <div class="card">
-                            <div class="box">
-                                <img src="assets/img/devs2.png" alt="" class="full-width-height">
-
-                                <div class="text">GIS Devs</div>
-                                <p>Loop through my GIS Web maps; popular among the list are, Open Source (leaflet) <strong>Free
-                                    Wifi locations app</strong> <br> and ESRI JavaScript SDK built app.</p>
-
-                                <div class="button-style">
-                                    <a href="https://josephgyegyiri.github.io/#GISDEVS" target="_blank">Visit Site</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="box">
-                                <img src="assets/img/geoana.png" alt="">
-                                <div class="text">Geospatial Analysis</div>
-                                <p>From Storm Water Master Plan, Crime Analysis, to Electric Vehicle Charging
-                                    Stations Dashboard
-                                    <br>
-                                    are few of indept geospatial analysis you will find on this page.</p>
-
-                                <div class="button-style">
-                                    <a href="https://josephgyegyiri.github.io/#GeoAnalyst" target="_blank">Start Exploring</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="box">
-                                <img src="assets/img/field.png" alt="">
-                                <div class="text">Mobile ArcGIS Field Map</div>
-                                <p>This is a field map, used by field personel for data collection and update. You will need to use a phone to open this field map<br> Download ArcGIS Field Map on your phone to use this app.</p>
-
-                                <div class="button-style">
-                                    <a href="https://fieldmaps.arcgis.app/?itemID=931d3d2034a241adb96d39e51f53b53c&referenceContext=open&portalURL=https%3A%2F%2FFAU.maps.arcgis.com" target="_blank">Use Field Map Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="box">
-                                <img src="https://images.natgeomaps.com/Logos/Collage_WallMaps_2100px.jpg" alt="">
-                                <div class="text">Maps</div>
-                                <p>
-                                    View 2D, 3D, Interactive maps.</p>
-
-                                <div class="button-style">
-                                    <a href="maps.html" target="_blank">View Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--div class="card">
-                            <div class="box">
-                                <img src="./gra.jpg" alt="">
-                                <div class="text">My Designs</div>
-                                <p>A web site which hass all the graphic designs i have done with Canva Software.</p>
-                                <div class="button-style">
-                                    <a href="https://dessy-inc.vercel.app/" target="_blank">View Designs</a>
-                                </div>
-                            </div>
-                        </div-->
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- contact section start -->
-            <section class="contact" id="contact">
-                <div class="max-width">
-                    <h2 class="title">Contact me</h2>
-                    <div class="contact-content">
-                        <div class="column right">
-                            <div class="text">Get in Touch</div>
-                            <p>Do you have any questions or you want some collaborations, free to hit me up.
-                                I would be get back to you shortly
-                            </p>
-                            <div class="text">
-                                <strong>Message me</strong>
-                            </div>
-                            <form
-                                action="https://formspree.io/f/myyqrdgk"
-                                method="POST"
-                                target="_blank"
-                                onsubmit="clearAndReload(event)">
-                                <!-- Hidden field for "blank" with value "true" -->
-                                <input type="hidden" name="blank" value="true">
-
-                                <div class="fields">
-                                    <div class="field name">
-                                        <input
-                                            type="tel"
-                                            id="fullname"
-                                            name="Full Name"
-                                            placeholder="Full Name"
-                                            required="required">
-                                    </div>
-                                    <div class="field email">
-                                        <input type="email" placeholder="Email" name="email" required="required">
-                                    </div>
-                                </div>
-
-                                <div class="field textarea">
-                                    <textarea
-                                        cols="50"
-                                        rows="20"
-                                        placeholder="enter your name followed by Message.."
-                                        name="message"
-                                        required="required"></textarea>
-                                </div>
-                                <div class="button-area">
-                                    <button type="submit">Send message</button>
-                                </div>
-                            </form>
-                            <script>
-                                function clearAndReload(event) {
-                                    // Clear the form inputs
-                                    document
-                                        .getElementById('whatsapp')
-                                        .value = '';
-                                    document
-                                        .getElementsByName('email')[0]
-                                        .value = '';
-                                    document
-                                        .getElementsByName('message')[0]
-                                        .value = '';
-
-                                    // Reload the page after a delay
-                                    setTimeout(function () {
-                                        location.reload();
-                                    }, 2000);
-
-                                    // Prevent the default form submission
-                                    event.preventDefault();
-                                }
-                            </script>
-                        </div>
-                        <div class="column left">
-                            <div class="column left">
-                                <!-- Embedded code for the animated typing GIF from your computer -->
-                                <div class="poto">
-                                    <!-- Embedded code for the animated typing GIF from your computer -->
-                                    <div style="width: 100%; height: 0; padding-bottom: 100%; position: relative;">
-                                        <img
-                                            id="animatedGif"
-                                            alt="Animated Typing GIF"
-                                            style="position: absolute; width: 100%; height: 100%;"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div
-                                        class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2 text-black"
-                                        id="currentDateTime">Sat 5 Aug [06:33:46]</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class=" joseph" id="joseph">
-                <div class="icons">
-                    <i class="fa-brands fa-square-java"></i>
-                    <a href="https://github.com/JosephGyegyiri" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/josephgyegyiri/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://twitter.com/kwakuGJ" target="_blank">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:jgyegyiri2023@fau.edu" target="_blank">
-                        <i class="far fa-envelope"></i>
-
-                    </a>
-                    <i class="fa-brands fa-square-java"></i>
-                </div>
-            </section>
-            <hr style="border: 0.5px solid rgb(2, 45, 4)">
-
-            <!-- footer section start -->
-            <footer>
-
-                <p>&copy; 2026
-                    <a href="#header">Joseph Gyegyiri</a>. All rights reserved.</p>
-
-            </footer>
-
-            <script src="assets/js/app.js"></script>
-            <script>
-                window.va = window.va || function () {
-                    (window.vaq = window.vaq || []).push(arguments);
-                };
-            </script>
-            <script defer="defer" src="/_vercel/insights/script.js"></script>
-
-        </body>
-    </html>
+            <div class="hero-visual" aria-label="Geospatial project preview"><div class="hero-image"><img src="assets/img/intro.png" alt="Geospatial visualization of a coastal area"></div><div class="hero-note"><span>01</span><strong>Resilience by design</strong><small>South Florida · USA</small></div></div>
+        </section>
+        <section class="proof-strip" aria-label="Areas of practice"><div class="wrap proof-grid"><span>Working across</span><strong>Water Resources Engineering</strong><strong>Engineering / Drainage Design</strong><strong>Hydrologic &amp; Hydraulic Modeling</strong><strong>Machine Learning</strong><strong>Data Science</strong><strong>Geospatial Analysis</strong></div></section>
+        <section class="section wrap" id="work">
+            <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Applied research, built for the real world.</h2></div><p class="section-intro">A selection of engineering and geospatial work connecting models to the people and decisions they serve.</p></div>
+            <div class="project-grid">
+                <article class="project project-featured"><div class="project-media"><img src="assets/img/geoana.png" alt="Geospatial analysis dashboard preview"></div><div class="project-body"><p class="project-type">01 · Water resources / Python</p><h3>Kissimmee Basin Headwater Revitalization</h3><p>Built a Python ETL pipeline and interactive calibration dashboard for scenario-based H&amp;H modeling. The workflow improved calibration efficiency by approximately 74% and made agency evaluations faster and repeatable.</p><a class="project-link" href="https://josephgyegyiri.github.io/#GeoAnalyst" target="_blank" rel="noopener">View analysis work <span aria-hidden="true">↗</span></a></div></article>
+                <article class="project"><div class="project-media"><img src="assets/img/devs2.png" alt="GIS web development project preview"></div><div class="project-body"><p class="project-type">02 · GIS development</p><h3>Maps that help people act</h3><p>Interactive web maps and decision-support prototypes built with open-source and Esri JavaScript tools, from public amenity mapping to spatial analysis dashboards.</p><a class="project-link" href="https://josephgyegyiri.github.io/#GISDEVS" target="_blank" rel="noopener">Explore GIS development <span aria-hidden="true">↗</span></a></div></article>
+                <article class="project"><div class="project-media"><img src="assets/img/field.png" alt="Mobile GIS field map preview"></div><div class="project-body"><p class="project-type">03 · Field data systems</p><h3>From field collection to insight</h3><p>A mobile ArcGIS field map designed for reliable data collection and updates, connecting field teams to a living spatial record.</p><a class="project-link" href="https://fieldmaps.arcgis.app/?itemID=931d3d2034a241adb96d39e51f53b53c&amp;referenceContext=open&amp;portalURL=https%3A%2F%2FFAU.maps.arcgis.com" target="_blank" rel="noopener">Open field map <span aria-hidden="true">↗</span></a></div></article>
+                <article class="project project-dark"><div class="project-media"><img src="assets/img/The Bahamas.jpg" alt="3D bathymetric map of The Bahamas"></div><div class="project-body"><p class="project-type">04 · Spatial visualization</p><h3>Seeing depth differently</h3><p>A 3D seafloor map of The Bahamas using GEBCO bathymetric data, created in ArcGIS Pro to turn complex terrain into an intuitive visual story.</p><a class="project-link" href="maps.html">View map gallery <span aria-hidden="true">↗</span></a></div></article>
+            </div>
+        </section>
+        <section class="approach-section" id="approach"><div class="wrap approach-grid"><div><p class="eyebrow">How I work</p><h2>Good analysis is only useful when it moves a decision forward.</h2></div><div class="approach-list"><div><span>01</span><h3>Model the system</h3><p>Translate rainfall, groundwater, tides, terrain, and future conditions into defensible H&amp;H and spatial models.</p></div><div><span>02</span><h3>Automate the repeatable</h3><p>Use Python and data engineering to make preprocessing, calibration, QA/QC, and scenario comparison faster and more consistent.</p></div><div><span>03</span><h3>Make the result legible</h3><p>Deliver maps, dashboards, reports, and tools that public agencies can use to plan infrastructure and reduce risk.</p></div></div></div></section>
+        <section class="section about-section wrap" id="about"><div class="about-image"><img src="assets/img/prof.jpg" alt="Joseph Gyegyiri"></div><div class="about-copy"><p class="eyebrow">About Joseph</p><h2>Engineering, data, and geospatial analysis for complex water systems.</h2><p>I am an Assistant Engineer at Hazen and Sawyer specializing in hydrologic and hydraulic modeling, engineering design, and data-driven analysis for large-scale water resources projects.</p><p>My work focuses on integrating surface and groundwater systems to support flood-risk assessment, infrastructure resilience, and watershed-scale decision-making. I am particularly interested in applying data science and geospatial analytics to improve engineering workflows and model performance.</p><div class="credential-list"><span>H&amp;H modeling</span><span>Drainage design</span><span>Machine learning</span><span>Data science</span><span>Geospatial analysis</span></div><a class="text-link" href="about.html">View full resume <span aria-hidden="true">↗</span></a></div></section>
+        <section class="contact-section" id="contact"><div class="wrap contact-grid"><div><p class="eyebrow">Start a conversation</p><h2>Have a water, risk, or spatial problem worth solving?</h2><p>For collaboration, research, or engineering opportunities, send a note and I will get back to you.</p><div class="contact-links"><a href="mailto:jgyegyiri2023@fau.edu">jgyegyiri2023@fau.edu <span>↗</span></a><a href="https://github.com/JosephGyegyiri" target="_blank" rel="noopener">github.com/JosephGyegyiri <span>↗</span></a></div></div><form action="https://formspree.io/f/myyqrdgk" method="POST"><label for="name">Name</label><input id="name" type="text" name="name" autocomplete="name" required><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea><button class="button button-light" type="submit">Send message <span aria-hidden="true">↗</span></button></form></div></section>
+    </main>
+    <footer><div class="wrap"><span>© 2026 Joseph Gyegyiri</span><span>Water resources · Data · GIS</span></div></footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

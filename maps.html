@@ -1,57 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>J. Gyegyiri</title>
-    <link rel="shortcut icon" href="assets/img/gt.png" >
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected spatial visualization work by Joseph Gyegyiri.">
+    <title>Map Gallery | Joseph Gyegyiri</title>
+    <link rel="icon" href="assets/img/gt.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-
-  </head>
-  <body>
-
-    <div class="">
-        <br>
-        <div class="slideshow-container">
-            <div class="image-section">
-                <a href="assets/img/The Bahamas.jpg" target="_blank"><img class="mySlides" src="assets/img/The Bahamas.jpg" alt="Image 1"></a>
-            </div>
-            <div class="text-section">
-                <p class="slide-text">
-                    <h3 class="text-center project-title">Bahamas</h3>
-                    <p><strong>This is a 3D Seafloor Map of the Bahamas.</strong><br></p>
-                    <p>The Bahamas is a travel destination for many due to its beautiful natural resources, such as its clear waters. Sun-kissed paradise in the Caribbean, Bahamas boasts crystal-clear waters & coral reefs. This island nation welcomes tourists with stunning beaches, vibrant culture, and charming history.</p>
-                    <p class="tools-used">Tools used: ArcGIS Pro</p>
-                    <p class="tools-used">Data: GEBCO global bathymetric Data</p>
-                    <p>Click on the map to see with full resolution</p>
-
-                </p>
-                <!-- <p class="slide-text">Text for Image 2</p>
-                <p class="slide-text">Text for Image 3</p> -->
-            </div>
-        </div>
-        
-            
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)">&#10095;</button>
-
-    </div>
-     <!-- footer section start -->
-  <footer>
-
-      <p>&copy; 2023
-          <a href="https://josephgyegyiri.github.io/portfolio/#header">Joseph Gyegyiri</a>. All rights reserved.</p>
-
-  </footer>
-
-   
-
-   
-
-  </body>
+    <style>
+        .map-page{min-height:100vh}.map-nav{padding-top:28px;padding-bottom:28px}.map-nav a{font-weight:700}.map-detail{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:58px;align-items:center;padding-top:55px;padding-bottom:100px}.map-image{background:var(--cream);padding:12px}.map-image img{display:block;width:100%;max-height:70vh;object-fit:contain}.map-copy h1{font:700 clamp(40px,5vw,70px)/1.02 var(--serif);letter-spacing:-3px;margin:0 0 25px}.map-copy p{color:var(--muted)}.map-meta{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;display:grid;gap:7px;font-size:14px}.map-meta strong{color:var(--teal);font-size:11px;text-transform:uppercase;letter-spacing:1.2px}.map-back{display:inline-block;margin-top:30px;border-bottom:1px solid var(--ink);font-weight:700;padding-bottom:4px}@media(max-width:800px){.map-detail{grid-template-columns:1fr;gap:30px;padding-top:25px}.map-image img{max-height:55vh}.map-copy h1{font-size:44px}}
+    </style>
+</head>
+<body class="map-page">
+    <header class="map-nav wrap"><a href="index.html">← Back to portfolio</a></header>
+    <main class="wrap map-detail">
+        <a class="map-image" href="assets/img/The Bahamas.jpg" target="_blank" rel="noopener"><img src="assets/img/The Bahamas.jpg" alt="3D seafloor map of The Bahamas"></a>
+        <div class="map-copy"><p class="eyebrow">Spatial visualization · 01</p><h1>Bahamas bathymetry</h1><p>A 3D seafloor map of The Bahamas that uses terrain to make the structure of a coastal environment easier to read.</p><div class="map-meta"><strong>Tools</strong><span>ArcGIS Pro</span><strong>Data</strong><span>GEBCO global bathymetric data</span></div><a class="map-back" href="assets/img/The Bahamas.jpg" target="_blank" rel="noopener">Open full resolution ↗</a></div>
+    </main>
+    <footer><div class="wrap"><span>© 2026 Joseph Gyegyiri</span><span>Water resources · Data · GIS</span></div></footer>
+</body>
 </html>
