@@ -19,5 +19,5 @@ drainage design, data science, and geospatial analysis.
 
 Visit the live portfolio:
 
-https://josephgyegyiri.github.io/
+https://josephgyegyiri.github.io/portfolio/
 
